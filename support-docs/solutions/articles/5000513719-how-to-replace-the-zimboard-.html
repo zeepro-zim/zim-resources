@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+
+        <!--[if lt IE 7]><html class="no-js ie6" lang="en" dir="ltr" data-date-format="non_us"><![endif]-->
+        <!--[if IE 7]><html class="no-js ie7" lang="en" dir="ltr" data-date-format="non_us"><![endif]-->
+        <!--[if IE 8]><html class="no-js ie8" lang="en" dir="ltr" data-date-format="non_us"><![endif]-->
+        <!--[if IE 9]><html class="no-js ie9" lang="en" dir="ltr" data-date-format="non_us"><![endif]-->
+        <!--[if IE 10]><html class="no-js ie10" lang="en" dir="ltr" data-date-format="non_us"><![endif]-->
+        <!--[if (gt IE 10)|!(IE)]><!--><html class="no-js " lang="en" dir="ltr" data-date-format="non_us"><!--<![endif]-->
+	<head>
+		
+		<!-- Title for the page -->
+<title> How to replace the zimboard ? : Zim Support  </title>
+
+<!-- Meta information -->
+ 
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"7cf3526a38","applicationID":"134883,3412802,5434024","transactionName":"dlwLRBcOCAlcQx0VE0VDCkIRThcKVURGDwlbQEpRFxUNBlVUQUkVXVwS","queueTime":1,"applicationTime":24,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"Vw4OUFJACQAEXFlR"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:23,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:10,2:9,3:7,4:11,5:3,6:24,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],6:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:10,2:9,3:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],7:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:25,ee:"QJf3ax",gos:"7eSDFh"}],8:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:25,ee:"QJf3ax"}],9:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:25,ee:"QJf3ax"}],10:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=t("ee").create(),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:25,ee:"QJf3ax"}],11:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:7,2:25,ee:"QJf3ax"}],12:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:13,3:11,4:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],13:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],14:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:23,2:24,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:23,2:14,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],23:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],24:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],25:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:24,ee:"QJf3ax"}]},{},["G9z0Bl",4,12,6,5]);</script>
+
+      <meta name="description" content="" />
+      <meta name="author" content="" />  <link rel="canonical" href="5000513719-how-to-replace-the-zimboard-.html" /> 
+
+<!-- Responsive setting -->
+<link rel="apple-touch-icon" href="../../../assets/touch/touch-icon-iphone.png" />
+    	  <link rel="apple-touch-icon" sizes="72x72" href="../../../assets/touch/touch-icon-ipad.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="../../../assets/touch/touch-icon-iphone-retina.png" />
+    	  <link rel="apple-touch-icon" sizes="144x144" href="../../../assets/touch/touch-icon-ipad-retina.png" />
+    	  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" /> 
+		
+		<!-- Adding meta tag for CSRF token -->
+		<meta content="authenticity_token" name="csrf-param" />
+<meta content="0I3zkqgnVJgFL8OJ08TOydHKUTyF5/nkx1zoZKXkUyw=" name="csrf-token" />
+		<!-- End meta tag for CSRF token -->
+		
+		<!-- Fav icon for portal -->
+		<link rel='shortcut icon' href='../../../assets/misc/favicon.ico-123457.png' />
+
+		<!-- Base stylesheet -->
+
+ 
+		<link href="http://assets5.freshdesk.com/assets/cdn/portal_utils-daf35cfc1e5d7b36aadd1d1d05f10967.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="http://assets2.freshdesk.com/assets/cdn/portal_print-e7c8c1fc055b88c0b4d5591826cf1115.css" media="print" rel="stylesheet" type="text/css" />
+
+		
+		<!-- Theme stylesheet -->
+		<link href="../../theme-v=1437254990.css" media="screen" rel="stylesheet" type="text/css">
+
+		<!-- Google font url if present -->
+		
+
+		<!-- Including default portal based script framework at the top -->
+		<script src="http://assets1.freshdesk.com/assets/cdn/portal_head-066cd90c7f3945bb7ae26b307aade828.js" type="text/javascript"></script>
+		
+		<!-- Including syntexhighlighter for portal -->
+		<script src="http://assets7.freshdesk.com/assets/cdn/syntaxhighlighter-bf80896326057c4518ca28deea891321.js" type="text/javascript"></script>
+
+		
+
+		<!-- Access portal settings information via javascript -->
+		 <script type="text/javascript">   	var portal = {"language":"en","name":"Zim Support ","contact_info":null,"current_page_name":"article_view","current_tab":"solutions","preferences":{"bg_color":"#ffffff","header_color":"#ffffff","help_center_color":"#f9f9f9","footer_color":"#777777","tab_color":"#00CBFF","tab_hover_color":"#FFFFFF","btn_background":"#ffffff","btn_primary_background":"#6c6a6a","baseFont":"Helvetica Neue","textColor":"#000000","headingsFont":"Helvetica Neue","headingsColor":"#000000","linkColor":"#049cdb","linkColorHover":"#036690","inputFocusRingColor":"#f4af1a","nonResponsive":"false"},"image_placeholders":{"spacer":"https://d1k77w8c6z6pel.cloudfront.net/assets/misc/spacer.gif","profile_thumb":"http://assets1.freshdesk.com/assets/misc/profile_blank_thumb-4dc7081f5a81594bba9bcee2a081de27.jpg","profile_medium":"http://assets4.freshdesk.com/assets/misc/profile_blank_medium-155f0a3a5ae0e78ee7917f54b9f26e64.jpg"}};  </script> 
+	</head>
+	<body>
+		
+
+		<div class="page">
+	<header class="banner">
+	<div class="banner-wrapper">
+		<div class="banner-title">
+			<a href='' class='portal-logo'><span class="portal-img"><i></i>
+										<img src='https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/5001135944/logo/Screen_Shot_2014-09-23_at_6.43.34_AM.png?AWSAccessKeyId=AKIAJ2JSYZ7O3I4JO6DA&Expires=1439062953&Signature=P4Iyo5bcUxqdjZWYqr5hV1vKANU=' alt="Logo"
+										 		onerror="default_image_error(this)" data-type="logo" />
+								 </span></a>
+			<h1 class="ellipsis heading">Zim Support </h1>
+		</div>
+		<nav class="banner-nav">
+			<div class="welcome">Welcome <b></b> </div>  <b><a href="../../login.html"><b>Login</b></a></b>
+		</nav>
+	</div>
+</header>
+<nav class="page-tabs" >
+	
+		<a data-toggle-dom="#header-tabs" href="5000513719-how-to-replace-the-zimboard-.html#" data-animated="true" class="mobile-icon-nav-menu show-in-mobile"></a>
+		<div class="nav-link" id="header-tabs">
+			
+				
+					<a href="../../home.html" class="">Home</a>
+				
+			
+				
+					<a href="../../solutions.html" class="active">Solutions</a>
+				
+			
+		</div>
+	
+</nav>
+	
+	<!-- Search and page links for the page -->
+	
+		<section class="help-center rounded-6">	
+			<div class="hc-search">
+				<div class="hc-search-c">
+					<h2 class="heading hide-in-mobile">How can we help you today?</h2>
+					<form class="hc-search-form" autocomplete="off" action="/support/search/solutions" id="hc-search-form">
+	<div class="hc-search-input">
+		<input placeholder="Enter your search term here..." type="text" 
+			name="term" class="special" value="" 
+            rel="page-search" data-max-matches="10">
+	</div>
+	<div class="hc-search-button">
+		<button class="btn btn-primary" type="submit" autocomplete="off">
+			<i class="mobile-icon-search hide-tablet"></i>
+			<span class="hide-in-mobile">
+				Search
+			</span>
+		</button>	
+	</div>
+</form>
+				</div>
+			</div>
+			<div class="hc-nav ">				
+				 <nav>  <div class="hide-in-mobile"><a href="../../login.html">Login</a> to submit a new ticket</div> 	<div>
+							<a href="../../login.html" class="mobile-icon-nav-status check-status ellipsis">
+								<span>Check ticket status</span>
+							</a>
+						</div>  </nav>
+			</div>
+		</section>
+	
+
+	<!-- Notification Messages -->
+	 <div class="alert alert-with-close notice" id="noticeajax" style="display:none;"></div> 
+
+	<div class="c-wrapper">		
+		<section class="main content rounded-6 min-height-on-desktop" id="article-show-5000513719">
+	<div class="breadcrumb">
+		<a href="../../solutions.html"> Solution home </a>
+		<a href="../5000041972.html">General</a>
+		<a href="../folders/5000065572.html">FAQ</a>
+	</div>
+	<b class="page-stamp page-stamp-article">
+		<b class="icon-page-article"></b>
+	</b>
+
+	<h2 class="heading">How to replace the zimboard ?
+		<a href="javascript:print();" class="icon-print solution-print-icon" title="Print this Article"></a>
+	</h2>
+	<p>Modified on: Mon, 16 Feb, 2015 at  7:48 PM</p>
+
+	<hr />
+	
+
+	<article class="article-body" id="article-body">
+		<p><span>First, you'll need to unscrew the base plate &amp; internal cover :</span><br></p>
+<p><br></p>
+<p>Unscrew the 6 screw on the top and the 4 allen screws below :</p>
+<p></p>
+<p><img src="https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/5004450035/original/Screw_the_baseplate_1.jpg?1419121932" class="inline-image" data-id="5004450035" data-height="723" style="cursor: default; height: 723px;"></p>
+<p><img src="https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/5004450034/original/Scre.jpg?1419121926" class="inline-image" data-id="5004450034" data-height="616" style="cursor: default; height: 616px; width: 606.474226804124px;"></p>
+<p><br></p>
+<p>Then unplug the power button cable.</p>
+<p></p>
+<p><img src="https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/5004450039/original/Plug_the_power_button_cable.jpg?1419122052" class="inline-image" data-id="5004450039" data-height="750" style="cursor: default; height: 750px;"></p>
+<p><br></p>
+<p><br></p>
+<p>1. Remove the cables</p>
+<p></p>
+<p><img src="http://cdn.freshdesk.com/data/helpdesk/attachments/production/5003309063/original/Remove_the_wires.jpg?1417134129" class="inline-image" data-id="5003309063" data-height="419" style="cursor: default; height: 419px; width: 679.1038647343px;"></p>
+<br><p></p>
+<p><br></p>
+<p>2. remove the heating cable</p>
+<p></p>
+<p><img src="http://cdn.freshdesk.com/data/helpdesk/attachments/production/5003309067/original/Remove_the_heating_wire.jpg?1417134148" class="inline-image" data-id="5003309067" data-height="553" style="cursor: default; height: 553px; width: 680.149635036496px;"></p>
+<br><p></p>
+<p>3. remove the daughter board pulling it gently on both sides</p>
+<p></p>
+<p><img src="http://cdn.freshdesk.com/data/helpdesk/attachments/production/5003309068/original/Remove_the_Daughter_board.jpg?1417134166" class="inline-image" data-id="5003309068" data-height="652" style="cursor: default; height: 652px; width: 681.817073170732px;"></p>
+<br><p></p>
+<p>4. remove the lasts cables on the zimboard</p>
+<p></p>
+<p></p>
+<p><img src="http://cdn.freshdesk.com/data/helpdesk/attachments/production/5003309085/original/Remove_the_connector_zimboard-cubiboard.jpg?1417134287" class="inline-image" data-id="5003309085" style="cursor: default; height: 602px; width: 617.894389438944px;" data-height="602"> </p>
+<p></p>
+<p><img src="https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/5004449996/original/Remove_the_connector_zimboard-cubiboard_(2).jpg?1419121191" class="inline-image" data-id="5004449996" data-height="825" style="cursor: default; height: 825px;"></p>
+<br>
+<p></p>
+<br><p></p>
+<p><br></p>
+<p>5. Remove the 3 screws of the zimboard. Push a bit the zimboard around them to enable the white plastic parts under the screw to move also</p>
+<p></p>
+<p><img src="http://cdn.freshdesk.com/data/helpdesk/attachments/production/5003309090/original/Unscrew_the_zimboard_(2).jpg?1417134345" class="inline-image" data-id="5003309090" data-height="495" style="cursor: default; height: 495px; width: 391.648351648352px;"> <img src="http://cdn.freshdesk.com/data/helpdesk/attachments/production/5003309089/original/Unscrew_the_zimboard_(1).jpg?1417134336" class="inline-image" data-id="5003309089" data-height="494" style="cursor: default; height: 494px; width: 450.666666666667px;">           <img src="http://cdn.freshdesk.com/data/helpdesk/attachments/production/5003309093/original/Unscrew_the_zimboard_(3).jpg?1417134361" class="inline-image" data-id="5003309093" data-height="492" style="cursor: default; height: 492px; width: 462.181818181818px;"></p>
+<br><p></p>
+<p><br></p>
+<p>6. Do not forget to unplug the fan wire pushing whith a pointed tool where it is indicated below </p>
+<p></p>
+<p></p>
+<p><img src="https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/5004450012/original/remove_the_fan_wire.jpg?1419121345" class="inline-image" data-id="5004450012" data-height="1034" style="cursor: default; height: 1034px;"></p>
+<br>
+<p></p>
+<p><br></p>
+<br><p></p>
+<p><br></p>
+<p><span style="font-size: x-large;"><span style="background-color: rgb(255, 0, 0);">How to reinstall the zimboard</span></span></p>
+<p><br></p>
+<p><span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13.3333330154419px;">1. Plug the fan wire to the zimboard</span></p>
+<p></p>
+<p><img src="http://cdn.freshdesk.com/data/helpdesk/attachments/production/5003309138/original/plug_the_fan_wire.jpg?1417134779" class="inline-image" data-id="5003309138" style="cursor: default; height: 1138px; width: 677.037974683544px;" data-height="1138"></p>
+<p></p>
+<p><br></p>
+<p>2. Screw the zimboard</p>
+<p><br></p>
+<p></p>
+<p><img src="http://cdn.freshdesk.com/data/helpdesk/attachments/production/5003309145/original/Screw_the_zimboard_(3).jpg?1417134850" class="inline-image" data-id="5003309145" data-height="563" style="cursor: default; height: 563px; width: 405.910386965377px;"> <img src="http://cdn.freshdesk.com/data/helpdesk/attachments/production/5003309144/original/Screw_the_zimboard_(2).jpg?1417134845" class="inline-image" data-id="5003309144" data-height="563" style="cursor: default; height: 563px; width: 483.863453815261px;"> <img src="http://cdn.freshdesk.com/data/helpdesk/attachments/production/5003309143/original/Screw_the_zimboard.jpg?1417134838" class="inline-image" data-id="5003309143" data-height="562" style="cursor: default; width: 281.565392354125px; height: 562px;"></p>
+<p></p>
+<p><br></p>
+<p>3. Plug the 2 wires which connects zimboard to cubiboard</p>
+<p></p>
+<p><img src="https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/5004450013/original/Remove_the_connector_zimboard-cubiboard_(2).jpg?1419121400" class="inline-image" data-id="5004450013" data-height="743" style="cursor: default; height: 743px;"></p>
+<br>
+<p></p>
+<p></p>
+<p><img src="http://cdn.freshdesk.com/data/helpdesk/attachments/production/5003309152/original/Remove_the_connector_zimboard-cubiboard.jpg?1417134969" class="inline-image" data-id="5003309152" data-height="538" style="cursor: default; height: 538px; width: 554.847599164927px;"><span> </span></p>
+<p><span><br></span></p>
+<p></p>
+<p></p>
+<p><br></p>
+<p>3. Put the daughter board</p>
+<p></p>
+<p><img src="http://cdn.freshdesk.com/data/helpdesk/attachments/production/5003309172/original/Put_the_daughter_board.jpg?1417135071" class="inline-image" data-id="5003309172" data-height="1105" style="cursor: default; height: 1105px; width: 679.439736346516px;"></p>
+<p></p>
+<p><br></p>
+<p>4. Put the wires as indicated below ( CAUTION : right motor goes on the left plug (E1) and left motor on the right plug (E2).</p>
+<p></p>
+<p><img src="http://cdn.freshdesk.com/data/helpdesk/attachments/production/5003868856/original/Base_plate.JPG?1417903695" class="inline-image" data-id="5003868856" data-height="517" style="cursor: default; height: 517px; width: 689.530285714286px;"></p>
+<br>
+<p></p>
+<p><br></p>
+<br><p></p>
+<p><br></p>
+<p>5. Place the power button cable as indicated below</p>
+<p></p>
+<p><img src="http://cdn.freshdesk.com/data/helpdesk/attachments/production/5003309176/original/Power_button_-_replace_base_plate.jpg?1417135106" class="inline-image" data-id="5003309176" data-height="877" style="cursor: default; height: 877px; width: 679.03640776699px;"></p>
+<br><p></p>
+<p>6. Insert the bottom of the base plate first, then screw it. One screw on both side</p>
+<p></p>
+<p><br></p>
+<p><img src="http://cdn.freshdesk.com/data/helpdesk/attachments/production/5003309179/original/Replace_the_base_plate.jpg?1417135151" class="inline-image" data-id="5003309179" data-height="758" style="cursor: default; height: 758px; width: 487.129682997118px;"><img src="http://cdn.freshdesk.com/data/helpdesk/attachments/production/5003309181/original/Screw_the_baseplate_1.jpg?1417135182" class="inline-image" data-id="5003309181" data-height="758" style="cursor: default; height: 758px; width: 637.85590778098px;"></p>
+<br><p></p>
+<p>7. Then insert the top of the base plate and screw it. Finally you can put all the screws</p>
+<p></p>
+<p><img src="http://cdn.freshdesk.com/data/helpdesk/attachments/production/5003309183/original/Screw_the_baseplate_2.jpg?1417135218" class="inline-image" data-id="5003309183" data-height="695" style="cursor: default; height: 695px; width: 685.42113323124px;"></p>
+<p></p>
+<p><br></p>
+<p>8. Unplug the E0 motor to Plug the power button cable. CAUTION, to insert it, push it gently on the with plastic part. then, put the E0 motor cable back</p>
+<p></p>
+<p><img src="http://cdn.freshdesk.com/data/helpdesk/attachments/production/5003309185/original/Plug_the_power_button_cable.jpg?1417135245" class="inline-image" data-id="5003309185" data-height="838" style="cursor: default; height: 838px; width: 681.206068268015px;"></p>
+<br><p></p>
+<p><br></p>
+<p>9. Plug the E0 motor cable </p>
+<p></p>
+<p><img src="http://cdn.freshdesk.com/data/helpdesk/attachments/production/5003309186/original/Power_button_cable_replaced.jpg?1417135262" class="inline-image" data-id="5003309186" data-height="1110" style="cursor: default; height: 1110px; width: 678.399570354458px;"></p>
+<br><p></p>
+<p>10. Screw the internal cover and replace the bottom cover</p>
+<p><br></p>
+<p>11. Insert filament manually up to the head in order to check if the Teflon tube path isn't blocked.</p>
+<p></p>
+<p></p>
+<p><img src="https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/5004450021/original/IMG_2215.JPG?1419121706" class="inline-image" data-id="5004450021" data-height="986" style="cursor: default; height: 986px;"></p>
+<br><br>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+
+	</article>
+
+	<hr />	
+		
+
+		<p class="article-vote" id="voting-container" 
+											data-user-id="" 
+											data-article-id="5000513719">
+										Was this answer helpful?<span data-href="/support/solutions/articles/5000513719/thumbs_up" class="vote-up a-link" id="article_thumbs_up" 
+									data-remote="true" data-method="put" data-update="#voting-container" 
+									data-user-id=""
+									data-article-id="5000513719"
+									data-update-with-message="Glad we could be helpful. Thanks for the feedback.">
+								Yes</span><span data-href="/support/solutions/articles/5000513719/thumbs_down" class="vote-down a-link" id="article_thumbs_down" 
+									data-remote="true" data-method="put" data-update="#vote-feedback-form" 
+									data-user-id=""
+									data-article-id="5000513719"
+									data-hide-dom="#voting-container" data-show-dom="#vote-feedback-container">
+								No</span></p><div class="hide" id="vote-feedback-container">	<div class="lead">Sorry we couldn't be helpful. Help us improve this article with your feedback.</div>	<div id="vote-feedback-form">		<div class="sloading loading-small loading-block"></div>	</div></div>
+		
+</section>
+<section class="sidebar content rounded-6">
+	<div id="related_articles"><div class="cs-g-c"><section class="article-list"><h3 class="list-lead">Related Articles</h3><ul rel="remote" 
+			data-remote-url="/support/search/articles/5000513719/related_articles?container=related_articles&limit=10" 
+			id="related-article-list"></ul></section></div></div>
+</section>
+
+	</div>
+
+	<footer class="footer rounded-6">
+	<nav class="footer-links">
+		
+				
+					<a href="../../home.html" class="">Home</a>
+				
+					<a href="../../solutions.html" class="active">Solutions</a>
+				
+		
+		
+			<a href="5000513719-how-to-replace-the-zimboard-.html#portal-cookie-info" rel="freshdialog" data-lazy-load="true" class="cookie-link"
+				data-width="450px" title="Why we love Cookies" data-template-footer="">
+				Cookie policy
+			</a> <div id="portal-cookie-info" class="hide"><textarea>
+				<p>We use cookies to try and give you a better experience in Freshdesk. </p>
+				<p>You can learn more about what kind of cookies we use, why, and how from our <a href="http://freshdesk.com/privacy/" target="_blank">Privacy Policy</a>. If you hate cookies, or are just on a diet, you can disable them altogether too. Just note that the Freshdesk service is pretty big on some cookies (we love the choco-chip ones), and some portions of Freshdesk may not work properly if you disable cookies. </p>
+				<p>We’ll also assume you agree to the way we use cookies and are ok with it as described in our <a href="http://freshdesk.com/privacy/" target="_blank">Privacy Policy</a>, unless you choose to disable them altogether through your browser. </p>
+			</textarea></div> 
+	</nav>
+</footer>
+
+
+</div>
+
+				
+	    <script src="http://assets6.freshdesk.com/assets/cdn/portal_bottom-3ebf2026c55c75726950b6309a96e1a6.js" type="text/javascript"></script>
+		<script src="http://assets3.freshdesk.com/assets/cdn/redactor-d849e9af49d631b3055b9a0ad023401f.js" type="text/javascript"></script>
+		<script src="http://assets6.freshdesk.com/assets/cdn/freshfone_portal-1255aab443fdf12b4c8c8c0bed6ffbc1.js" type="text/javascript"></script>	
+		<script src="http://assets1.freshdesk.com/assets/cdn/lang/en-778a07cfd489027db5c7ac2a4523553f.js" type="text/javascript"></script>
+		<!-- Including default portal based script at the bottom -->
+		<script type="text/javascript">
+//<![CDATA[
+	
+	jQuery(document).ready(function() {
+					
+		// Setting the locale for moment js
+		moment.lang('en');
+
+		var validation_meassages = {"required":"This field is required.","remote":"Please fix this field.","email":"Please enter a valid email address.","url":"Please enter a valid URL.","date":"Please enter a valid date.","dateISO":"Please enter a valid date ( ISO ).","number":"Please enter a valid number.","digits":"Please enter only digits.","creditcard":"Please enter a valid credit card number.","equalTo":"Please enter the same value again."}	
+
+		jQuery.extend(jQuery.validator.messages, validation_meassages );
+
+
+		jQuery(".call_duration").each(function () {
+			var format,time;
+			if (jQuery(this).data("time") === undefined) { return; }
+			time = jQuery(this).data("time");
+			if (time>=3600) {
+			 format = "hh:mm:ss";
+			} else {
+				format = "mm:ss";
+			}
+			jQuery(this).html(time.toTime(format));
+		});
+	});
+
+	// Shortcuts variables
+	var Shortcuts = {"global":{"help":"?","save":"mod+return","cancel":"esc","search":"/","status_dialog":"mod+alt+return","save_cuctomization":"mod+shift+s"},"app_nav":{"dashboard":"g d","tickets":"g t","social":"g e","solutions":"g s","forums":"g f","customers":"g c","reports":"g r","admin":"g a","ticket_new":"g n"},"pagination":{"previous":"alt+left","next":"alt+right"},"ticket_list":{"ticket_show":"return","select":"x","select_all":"shift+x","show_description":"space","toggle_list_view":"shift+v","unwatch":"w","delete":"#","pickup":"@","spam":"!","close":"~","silent_close":"alt+shift+`","undo":"z","reply":"r","forward":"f","add_note":"n"},"ticket_detail":{"toggle_watcher":"w","reply":"r","forward":"f","add_note":"n","close":"~","silent_close":"alt+shift+`","add_time":"m","spam":"!","delete":"#","show_activities_toggle":"}","properties":"p","expand":"]","undo":"z","select_watcher":"shift+w","go_to_next":["j","down"],"go_to_previous":["k","up"],"scenario":"s"},"social_stream":{"search":"s","go_to_next":["j","down"],"go_to_previous":["k","up"],"open_stream":["space","return"],"close":"esc","reply":"r","retweet":"shift+r"},"portal_customizations":{"preview":"mod+shift+p"},"discussions":{"toggle_following":"w","add_follower":"shift+w","reply_topic":"r"}};
+	
+	// Date formats
+	var DATE_FORMATS = {"non_us":{"moment_date_with_week":"ddd, D MMM, YYYY","datepicker":"d M, yy","datepicker_escaped":"d M yy","datepicker_full_date":"D, d M, yy","mediumDate":"d MMM, yyyy"},"us":{"moment_date_with_week":"ddd, MMM D, YYYY","datepicker":"M d, yy","datepicker_escaped":"M d yy","datepicker_full_date":"D, M d, yy","mediumDate":"MMM d, yyyy"}};
+
+//]]>
+</script> 
+
+		
+
+		<img src='http://zimsupport.zeepro.com/support/solutions/articles/5000513719-how-to-replace-the-zimboard-/hit' />
+	</body>
+</html>
